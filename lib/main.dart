@@ -62,6 +62,14 @@ class MyApp extends StatelessWidget {
               style: TextStyle(fontSize: 18, fontWeight:FontWeight.bold  ),
               ),
           ),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            alignment: Alignment.topLeft,
+            color:Colors.purpleAccent,
+            child: Text(
+              'Transfer'
+            )
           )
           ]
         )
