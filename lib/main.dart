@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.red
         ),
         body: Column(
-          children:[
+          children:<Widget>[
             Container(
               alignment: Alignment.topCenter,
               padding: EdgeInsets.only(bottom:15),
@@ -61,6 +61,7 @@ class MyApp extends StatelessWidget {
               child: Text('Costa Mendekat Ke Palmeiras' ,
               style: TextStyle(fontSize: 18, fontWeight:FontWeight.bold  ),
               ),
+          ),
           )
           ]
         )
