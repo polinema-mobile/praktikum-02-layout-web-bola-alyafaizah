@@ -17,12 +17,14 @@ class MyApp extends StatelessWidget {
         body: Column(
           children:<Widget>[
             Container(
-              alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(bottom:15),
-              child:Text(
-             'BERITA TERBARU       PERTANDINGAN HARI INI',
-            style: TextStyle(fontSize:14,height: 3.0),
-          ),
+              padding: const EdgeInsets.all(10.0),
+              child: Row( 
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children:[
+                  Text("BERITA TERBARU"),
+                  Text("PERTANDINGAN HARI INI"),
+                ],
+              ),
           ),
           Container(
             decoration: BoxDecoration(
@@ -70,9 +72,47 @@ class MyApp extends StatelessWidget {
             child: Text(
               'Transfer'
             )
+          ),
+          Padding(padding: const EdgeInsets.all(3.0)
+          ),
+          Container(
+            decoration:BoxDecoration(
+              border: Border.all(color: Colors.grey),
+              ),
+              child: Column(children: [
+                Row(
+                  children:[
+                    Expanded(child: Image.network('https://cdns.klimg.com/bola.net/library/upload/21/2021/02/luis-suarez_ec86d1f.jpg'),
+                    ),
+                    SizedBox(width:5,
+                    ),
+                    Expanded(child: Center(
+                      child: Text(
+                        'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat',
+                        style: TextStyle(fontSize: 12)
+                        ),
+                      ),
+                      ),
+                      SizedBox(width:5,
+                      ),
+                  ]
+                ),
+                Container(
+                  padding: const EdgeInsets.all(10.0),
+                  alignment: Alignment.centerLeft,
+                  decoration:BoxDecoration(
+                    border: Border.all(color: Colors.grey)
+                  ),
+                  child: Text(
+                    'Barcelona Feb 13,2021',
+                    style: TextStyle(fontSize: 12)
+                    ),
+                  ),
+              ],
+              ),
           )
           ]
-        )
+        ),
       ),
     );
   }
