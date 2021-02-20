@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
               margin : const EdgeInsets.all(0.0),
               padding : const EdgeInsets.all(10.0),
               alignment: Alignment.topCenter,
-              child: Text('Costa Mendekat Ke Palmeiras' ,
+              child: Text("Costa Mendekat Ke Palmeiras" ,
               style: TextStyle(fontSize: 18, fontWeight:FontWeight.bold  ),
               ),
           ),
@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
             alignment: Alignment.centerLeft,
             color:Colors.purpleAccent,
             child: Text(
-              'Transfer'
+              "Transfer"
             )
           ),
           Padding(padding: const EdgeInsets.all(3.0)
@@ -82,13 +82,13 @@ class MyApp extends StatelessWidget {
               child: Column(children: [
                 Row(
                   children:[
-                    Expanded(child: Image.network('https://cdns.klimg.com/bola.net/library/upload/21/2021/02/arsenal-pool-getty-0_d460029.jpg'),
+                    Expanded(child: Image.network('https://cdns.klimg.com/bola.net/library/upload/21/2021/02/luis-suarez_ec86d1f.jpg'),
                     ),
                     SizedBox(width:5,
                     ),
                     Expanded(child: Center(
                       child: Text(
-                        'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat',
+                        "Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat",
                         style: TextStyle(fontSize: 12)
                         ),
                       ),
@@ -104,51 +104,52 @@ class MyApp extends StatelessWidget {
                     border: Border.all(color: Colors.grey)
                   ),
                   child: Text(
-                    'Barcelona Feb 13,2021',
+                    "Barcelona Feb 13,2021",
                     style: TextStyle(fontSize: 12)
                     ),
                   ),
+                  Padding(padding: const EdgeInsets.all(3.0)
+                  ),
+                  Container(
+                    decoration:BoxDecoration(
+                      border: Border.all(color: Colors.grey),
+                    ),
+                    child: Column(children: [
+                      Row(children: [
+                        Expanded(
+                          child: Image.network(
+                            'https://cdns.klimg.com/bola.net/library/upload/21/2021/02/luis-suarez_ec86d1f.jpg'
+                          ),
+                          ),
+                          SizedBox(width:10,
+                          ),
+                          Expanded(
+                            child:Center(
+                              child: Text(
+                                "Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat",
+                                style:TextStyle(fontSize: 12)
+                              ),
+                              )
+                              ),
+                              SizedBox(width:10,
+                              ),
+                      ],
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(10.0),
+                        alignment: Alignment.centerLeft,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey )),
+                            child: Text("Barcelona Feb 13,2021",
+                            style:TextStyle(fontSize: 12)),
+                      )
+                    ],),
+                  ),
+
               ],
               ),
           ),
-          Padding(padding: const EdgeInsets.all(3.0)
-          ),
-          Container(
-            decoration:BoxDecoration(
-              border: Border.all(color: Colors.grey),
-              ),
-              child: Column(children: [
-                Row(
-                  children:[
-                    Expanded(child: Image.network('https://cdns.klimg.com/bola.net/library/upload/21/2021/02/arsenal-pool-getty-0_d460029.jpg'),
-                    ),
-                    SizedBox(width:5,
-                    ),
-                    Expanded(child: Center(
-                      child: Text(
-                        'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat',
-                        style: TextStyle(fontSize: 12)
-                        ),
-                      ),
-                      ),
-                      SizedBox(width:5,
-                      ),
-                  ]
-                ),
-                Container(
-                  padding: const EdgeInsets.all(10.0),
-                  alignment: Alignment.centerLeft,
-                  decoration:BoxDecoration(
-                    border: Border.all(color: Colors.grey)
-                  ),
-                  child: Text(
-                    'Barcelona Feb 13,2021',
-                    style: TextStyle(fontSize: 12)
-                    ),
-                  ),
-              ],
-              ),
-          )
           
           ]
         ),
