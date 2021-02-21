@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children:<Widget>[
             Container(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row( 
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children:[
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
               margin : const EdgeInsets.all(0.0),
-              padding : const EdgeInsets.all(10.0),
+              padding : const EdgeInsets.all(8.0),
               alignment: Alignment.topCenter,
               child: Text("Costa Mendekat Ke Palmeiras" ,
               style: TextStyle(fontSize: 18, fontWeight:FontWeight.bold  ),
@@ -66,14 +66,14 @@ class MyApp extends StatelessWidget {
           ),
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            padding: EdgeInsets.fromLTRB(0, 7, 0, 7),
             alignment: Alignment.centerLeft,
             color:Colors.purpleAccent,
             child: Text(
               "Transfer"
-            )
+            ),
           ),
-          Padding(padding: const EdgeInsets.all(3.0)
+          Padding(padding: const EdgeInsets.all(1.0)
           ),
           Container(
             decoration:BoxDecoration(
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
               child: Column(children: [
                 Row(
                   children:[
-                    Expanded(child: Image.network('https://cdns.klimg.com/bola.net/library/upload/21/2021/02/luis-suarez_ec86d1f.jpg'),
+                    Expanded(child: Image.network('https://cdn1-production-images-kly.akamaized.net/10R8hX3xdDkeRDg9L9XGPbdwV28=/0x440:4705x3092/1280x720/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3313836/original/078526900_1606952912-20201202-PSG_vs_Manchester_United-AP_6.jpg'),
                     ),
                     SizedBox(width:5,
                     ),
@@ -118,7 +118,7 @@ class MyApp extends StatelessWidget {
                       Row(children: [
                         Expanded(
                           child: Image.network(
-                            'https://cdns.klimg.com/bola.net/library/upload/21/2021/02/luis-suarez_ec86d1f.jpg'
+                            'https://cdn1-production-images-kly.akamaized.net/10R8hX3xdDkeRDg9L9XGPbdwV28=/0x440:4705x3092/1280x720/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3313836/original/078526900_1606952912-20201202-PSG_vs_Manchester_United-AP_6.jpg'
                           ),
                           ),
                           SizedBox(width:10,
@@ -150,7 +150,7 @@ class MyApp extends StatelessWidget {
               ],
               ),
           ),
-          
+
           ]
         ),
       ),
